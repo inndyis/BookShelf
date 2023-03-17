@@ -1,0 +1,62 @@
+<!doctype html>
+<htm>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bookshelf Apps</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Bookshelf Apps</h1>
+            <p>Directori Penyimpanan Buku</p>
+        </header>
+        <main>
+            <section class="search_section">
+                <form id="searchBook">
+                  <label for="searchBookTitle">Cari Buku</label>
+                  <input title="Judul" id="searchBk" type="text">
+                  <button id="BtnSrch" type="submit">Cari </button>
+                </form>
+            </section>
+            <section class="input_section">
+                <h2>Masukkan Buku Baru</h2>
+                <form id="inputBuku">
+                    <div class="input">
+                        <label for="inputJudulbuku">Judul</label>
+                        <input id="inputJudulBk"  type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputPenulis">Penulis</label>
+                        <input id="inputPenulisBk" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputTahunBuku">Tahun</label>
+                        <input id="inputTahunBk"  type="number" required>
+                    </div>
+                    <button id="BtnSubmit" type="submit">Submit Buku </button>
+                </form>
+            </section>
+            <section>
+                <div class="container">
+                    <h2 class="container-header">Rak Buku Belum selesai dibaca</h2>
+                    <div class="list-item" id="inCompletedBk"></div>
+                  </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h2 class="container-header">Rak Buku Telah selesai dibaca</h2>
+                    <div class="list-item" id="CompletedBk"></div>
+                  </div>
+            </section>
+        </main>
+        <script scr="js/Script.js"></script>
+    </body>
+    <footer>
+        <p>Tugas Akhir Membuat Aplikasi Data Menggunakan DOM dan Web Storage, Dicoding Academy</p>
+    </footer>  
+</htm>
